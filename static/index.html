@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Audio Interview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Audio Interview</h1>
+    <div id="setup">
+      <input type="text" id="job-role" placeholder="Enter job role (e.g. Software Engineer)">
+      <button id="start-btn">Start Interview</button>
+    </div>
+    <div id="interview" style="display:none;">
+      <div id="question-area">
+        <h2 id="question-text"></h2>
+        <audio id="question-audio" controls></audio>
+      </div>
+      <div id="answer-area">
+        <button id="record-btn">Record Answer</button>
+        <button id="stop-btn" disabled>Stop</button>
+        <audio id="answer-audio" controls style="display:none;"></audio>
+        <button id="submit-btn" disabled>Submit Answer</button>
+      </div>
+    </div>
+    <div id="result" style="display:none;"></div>
+    <div id="status"></div>
+    <pre id="result-text"></pre>
+  </div>
+  <script src="/static/app.js"></script>
+  <script>
+    document.getElementById('start-btn').onclick = async () => {
+      const jobRole = document.getElementById('job-role').value.trim();
+      if (!jobRole) return alert('Please enter a job role!');
+      document.getElementById('status').textContent = 'Interview in progress... Please answer questions using the server mic/speaker.';
+      document.getElementById('result-text').textContent = '';
+      const res = await fetch('/run_interview', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ job_role: jobRole })
+      });
+      const data = await res.json();
+      document.getElementById('status').textContent = '';
+      document.getElementById('result-text').textContent = JSON.stringify(data, null, 2);
+    };
+  </script>
+</body>
+</html> 

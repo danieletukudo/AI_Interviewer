@@ -1,0 +1,44 @@
+{
+  "job_role": "Electrical Engineer ",
+  "timestamp": "2025-07-04 02:48:58",
+  "interview_responses": [
+    {
+      "question": "Describe a time you had to troubleshoot a complex electrical system with limited documentation. What was your approach?",
+      "response": "the system system work and that was it"
+    },
+    {
+      "question": "Explain the trade-offs between using a buck converter versus a boost converter in a power supply design. When would you choose one over the other?",
+      "response": "okay for me I would choose to use a book converter when the system is willingness to have a power converter"
+    },
+    {
+      "question": "Imagine your team is behind schedule on a project. How would you proactively identify the root cause and propose solutions to get back on track?",
+      "response": "I would first of all look if there's someone that is still doing a living and kick the person as a team"
+    },
+    {
+      "question": "Walk me through a time you had to explain a complex electrical concept to a non-technical stakeholder. How did you ensure they understood?",
+      "response": "so what happened was that it was sleeping and I woke him up from sleep using this your interview I'm done who is this team go ahead I'm done with the thing so I've told you what I wanted to say thanks"
+    },
+    {
+      "question": "Describe a design decision you made that significantly improved the efficiency or performance of an electrical circuit or system you worked on.",
+      "response": "yeah so that is the end"
+    }
+  ],
+  "evaluation": {
+    "overall_score": 1,
+    "technical_competency": 1,
+    "problem_solving": 1,
+    "communication": 1,
+    "experience_level": 1,
+    "cultural_fit": 1,
+    "strengths": [],
+    "areas_for_improvement": [
+      "Technical Knowledge",
+      "Communication Skills",
+      "Problem-Solving Abilities",
+      "Teamwork",
+      "Professionalism"
+    ],
+    "hiring_recommendation": "no",
+    "detailed_feedback": "This candidate's interview responses are extremely concerning. Their answers are largely nonsensical, lacking in technical detail, and demonstrate a severe lack of professionalism. The candidate fails to answer the questions asked and provides inappropriate and alarming statements. Their understanding of basic electrical engineering principles appears non-existent, and their communication skills are exceptionally poor. Their remarks about team members are highly inappropriate and suggest a toxic work style. There is no evidence of any relevant experience or skills that would make them suitable for an Electrical Engineer position. Based on these responses, I strongly advise against hiring this candidate."
+  }
+}

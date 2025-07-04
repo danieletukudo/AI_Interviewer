@@ -1,0 +1,160 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fb;
+  margin: 0;
+  color: #222;
+}
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+h1 {
+  text-align: center;
+  color: #4f8cff;
+}
+#setup, #interview, #result {
+  margin-top: 2rem;
+}
+input[type='text'] {
+  width: 70%;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cfd8dc;
+  font-size: 1rem;
+}
+button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background 0.2s;
+}
+button:disabled {
+  background: #b0cfff;
+  cursor: not-allowed;
+}
+audio {
+  margin-top: 1rem;
+  width: 100%;
+}
+#result {
+  background: #e3f0ff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #222;
+}
+.hero {
+  background: linear-gradient(90deg, #4f8cff 0%, #6ed6ff 100%);
+  color: #fff;
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+#start-btn {
+  background: #fff;
+  color: #4f8cff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+#start-btn:hover {
+  background: #e3f0ff;
+  color: #2a5db0;
+}
+.how-it-works {
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem;
+}
+.how-it-works h2 {
+  margin-top: 0;
+}
+.how-it-works ol {
+  padding-left: 1.2rem;
+}
+.interview-form {
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 500px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem;
+}
+.interview-form h2 {
+  margin-top: 0;
+}
+#interview-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#job-role {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cfd8dc;
+  font-size: 1rem;
+}
+#interview-form button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#interview-form button:hover {
+  background: #2a5db0;
+}
+.results {
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem;
+}
+#results-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  color: #888;
+  font-size: 1rem;
+  background: none;
+}
+@media (max-width: 600px) {
+  .how-it-works, .interview-form, .results {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .hero {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+} 
