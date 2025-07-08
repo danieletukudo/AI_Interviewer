@@ -421,7 +421,7 @@ class InterviewAI:
             self.voice.speak("I apologize, but there was an error during the interview. Please try again.")
 
 if __name__ == '__main__':
-    api_key = "AIzaSyCMV1RzXC62lSyDxqcqlky-p1UzHqH2XEw"
+    api_key = ""
     base_url = "https://generativelanguage.googleapis.com/v1beta/openai/"
     client = OpenAIClient(api_key, base_url)
 
